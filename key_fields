@@ -1,0 +1,4 @@
+# These fields are installed as key fields when fast_carts is installed
+text Regular+Price 0.00
+text Sale+Price 0.00
+text In+Stock Yes

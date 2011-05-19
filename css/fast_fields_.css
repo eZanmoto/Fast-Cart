@@ -1,0 +1,10 @@
+form span[class="label"]
+{
+    float: left;
+    width: 10em;
+}
+
+form div
+{
+    clear: left;
+}

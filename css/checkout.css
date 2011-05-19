@@ -1,0 +1,15 @@
+label
+{
+    float: left;
+    width: 10em;
+}
+
+form div
+{
+    clear: left;
+}
+
+#content h3
+{
+	margin: 0;
+}

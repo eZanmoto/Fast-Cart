@@ -1,0 +1,24 @@
+ul.fast_fields_tab_navigation
+{
+	background-color: #f0f0f0;
+	padding: 0.5em;
+}
+
+ul.fast_fields_tab_navigation li
+{
+	display: inline;
+}
+
+ul.fast_fields_tab_navigation a
+{
+	color: #000000;
+	font-weight: bold;
+	padding: 0.2em;
+	text-decoration: none;
+}
+
+ul.fast_fields_tab_navigation a.selected
+{
+	background-color: #f8f8f8;
+	padding-bottom: 0.5em;
+}

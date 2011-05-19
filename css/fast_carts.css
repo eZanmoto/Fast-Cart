@@ -1,0 +1,11 @@
+div#fast_carts_widget tbody input
+{
+    height: 1.8em;
+    width:  1.8em;
+}
+
+div#fast_carts_widget tbody td.fast_carts_data
+{
+    padding: 0 0.5em;
+    border-bottom: 1px dashed #aaa;
+}
