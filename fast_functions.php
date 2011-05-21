@@ -53,6 +53,41 @@ class fast_functions {
 
         return $missing_tables;
     }
+
+	/**
+	 * Outputs the HTML tags for linking to CSS sheets.
+	 *
+	 */
+	function output_css_links( $css_links ) {
+        $url = get_bloginfo('wpurl');
+
+		if ( ! is_array( $css_links ) ) {
+			$css_links = array( $css_links );
+		}
+
+		foreach ( $css_links as $css ) {
+			echo "<link type='text/css' rel='stylesheet' href="
+				 . "'{$url}/wp-content/plugins/fast_cart/css/{$css}.css' />\n";
+		}
+	}
+
+	/**
+	 * Outputs the HTML tags for linking to CSS sheets.
+	 *
+	 */
+	function output_js_links( $js_links ) {
+        $url = get_bloginfo('wpurl');
+
+		if ( ! is_array( $js_links ) ) {
+			$js_links = array( $js_links );
+		}
+
+		foreach ( $js_links as $js ) {
+			echo "<script type='text/javascript' src="
+				 . "'{$url}/wp-content/plugins/fast_cart/js/{$js}.js'>"
+				 . "</script>\n";
+		}
+	}
 }
 
 global $fast_functions;

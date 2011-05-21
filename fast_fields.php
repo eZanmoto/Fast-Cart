@@ -178,21 +178,21 @@ class fast_fields{
      *
      * Hooked to the {@code admin_head} action.
      *
+	 * @uses fast_fields::prefix
+	 * @uses fast_functions::output_css_links()
+	 * @uses fast_functions::output_js_links()
      * @since 0.1
      * @access private
      */
     function admin_html_header() {
-        $url = get_bloginfo('wpurl');
+		global $fast_functions;
 
-        echo '<link type="text/css" href="' . $url .
-             '/wp-content/plugins/fast_cart/css/' . $this->prefix .
-             'admin.css" rel="stylesheet" />';
-        echo '<script type="text/javascript" src="' . $url .
-             '/wp-content/plugins/fast_cart/js/jquery-1.4.3.min.js">
-             </script>';
-        echo '<script type="text/javascript" src="' . $url .
-             '/wp-content/plugins/fast_cart/js/fast_fields.js">
-             </script>';
+		$admin_css = $this->prefix . 'admin';
+
+		$css_files = array( $admin_css );
+		$js_files  = array( 'jquery-1.4.3.min', 'fast_fields' );
+		$fast_functions->output_css_links( $css_files );
+		$fast_functions->output_js_links(  $js_files  );
     }
 
     /**
@@ -200,13 +200,16 @@ class fast_fields{
      *
      * Hooked to the {@code wp_head} action.
      *
+	 * @uses fast_fields::prefix
+	 * @uses fast_functions::output_css_links()
      * @since 0.6
      * @access private
      */
     function html_header() {
-        echo '<link type="text/css" href="' . $url .
-             '/wp-content/plugins/fast_cart/css/' . $this->prefix .
-             '.css" rel="stylesheet" />';
+		global $fast_functions;
+		$fast_fields_css = $this->prefix;
+		$css_files       = array( $fast_fields_css );
+		$fast_functions->output_css_links( $css_files );
     }
 
     /**
