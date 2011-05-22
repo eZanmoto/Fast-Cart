@@ -1,0 +1,997 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Docs For Class fast_fields</title>
+	<link rel="stylesheet" type="text/css" id="layout" href="../../media/layout.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../../media/style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../../media/print.css" media="print">
+</head>
+
+<body>
+<div id="header">
+	<div id="navLinks">
+        
+                                                        
+                            	        [ <a href="../../classtrees_eZanmoto.html">Class Tree: eZanmoto</a> ]
+            [ <a href="../../elementindex_eZanmoto.html">Index: eZanmoto</a> ]
+        		[ <a href="../../elementindex.html">All elements</a> ]		
+	</div>
+	<div id="packagePosition">
+		<div id="packageTitle2">eZanmoto</div>
+		<div id="packageTitle">eZanmoto</div>
+		<div id="elementPath">Fields &middot; </div>
+	</div>
+</div>
+
+<div id="nav" class="small">
+	<div id="packages">
+		Packages:
+					<p><a href="../../li_default.html">default</a></p>
+					<p><a href="../../li_eZanmoto.html">eZanmoto</a></p>
+			</div>
+
+				<div id="index">
+			<div id="files">
+								Files:<br>
+					subpackage <b>Carts</b><br>			<a href="../../eZanmoto/Carts/_fast_carts.php.html">		fast_carts.php
+		</a><br>
+		subpackage <b>Debugging</b><br>			<a href="../../eZanmoto/Debugging/_debugger.php.html">		debugger.php
+		</a><br>
+		subpackage <b>FastCart</b><br>			<a href="../../eZanmoto/FastCart/_fast_cart.php.html">		fast_cart.php
+		</a><br>
+		subpackage <b>Fields</b><br>			<a href="../../eZanmoto/Fields/_fast_fields.php.html">		fast_fields.php
+		</a><br>
+		subpackage <b>Products</b><br>			<a href="../../eZanmoto/Products/_fast_products.php.html">		fast_products.php
+		</a><br>
+		subpackage <b>Util</b><br>			<a href="../../eZanmoto/Util/_fast_functions.php.html">		fast_functions.php
+		</a><br>
+				</div>
+			<div id="interfaces">
+							</div>
+			<div id="classes">
+				Classes:<br>
+					<b>Debugging</b><br>			<a href="../../eZanmoto/Debugging/debugger.html">		debugger
+		</a><br>
+		<b>FastCart</b><br>			<a href="../../eZanmoto/FastCart/fast_cart.html">		fast_cart
+		</a><br>
+		<b>Carts</b><br>			<a href="../../eZanmoto/Carts/fast_carts.html">		fast_carts
+		</a><br>
+		<b>Fields</b><br>			<a href="../../eZanmoto/Fields/fast_fields.html">		fast_fields
+		</a><br>
+		<b>Util</b><br>			<a href="../../eZanmoto/Util/fast_functions.html">		fast_functions
+		</a><br>
+		<b>Products</b><br>			<a href="../../eZanmoto/Products/fast_products.html">		fast_products
+		</a><br>
+				</div>
+		</div>
+	</div>
+
+<div id="body">
+	    		<h1>Class: fast_fields</h1>
+	<p style="margin: 0px;">Source Location: /fast_fields.php</p>
+	
+
+<div class="leftcol">
+	<h3><a href="#class_details">Class Overview</a> <span class="smalllinenumber">[line 33]</span></h3>
+	<div id="classTree"><pre></pre>
+</div>
+	<div class="small">
+	<p>Wordpress Custom Field Object</p>
+		<h4>Author(s):</h4>
+	<ul>
+								</ul>
+	<h4>Version:</h4>
+	<ul>
+								</ul>
+
+	<h4>Copyright:</h4>
+	<ul>
+								</li>
+	</div>
+</div>
+
+<div class="middlecol">
+	<h3><a href="#class_vars">Variables</a></h3>
+	<ul class="small">
+				<li><a href="../../eZanmoto/Fields/fast_fields.html#var$meta_table">$meta_table</a></li>
+				<li><a href="../../eZanmoto/Fields/fast_fields.html#var$table">$table</a></li>
+			</ul>
+	<h3><a href="#class_consts">Constants</a></h3>
+	<ul class="small">
+			</ul>
+</div>
+<div class="rightcol">
+	<h3><a href="#class_methods">Methods</a></h3>
+	<ul class="small">
+				<li><a href="../../eZanmoto/Fields/fast_fields.html#method__construct">__construct</a></li>
+				<li><a href="../../eZanmoto/Fields/fast_fields.html#methodadd_field">add_field</a></li>
+				<li><a href="../../eZanmoto/Fields/fast_fields.html#methodadd_field_attribute">add_field_attribute</a></li>
+				<li><a href="../../eZanmoto/Fields/fast_fields.html#methodedit_post_field">edit_post_field</a></li>
+				<li><a href="../../eZanmoto/Fields/fast_fields.html#methodfields_with_attribute">fields_with_attribute</a></li>
+				<li><a href="../../eZanmoto/Fields/fast_fields.html#methodfield_name_used">field_name_used</a></li>
+				<li><a href="../../eZanmoto/Fields/fast_fields.html#methodget_field">get_field</a></li>
+				<li><a href="../../eZanmoto/Fields/fast_fields.html#methodget_fields">get_fields</a></li>
+				<li><a href="../../eZanmoto/Fields/fast_fields.html#methodget_field_id">get_field_id</a></li>
+				<li><a href="../../eZanmoto/Fields/fast_fields.html#methodget_field_ids">get_field_ids</a></li>
+				<li><a href="../../eZanmoto/Fields/fast_fields.html#methodget_field_name">get_field_name</a></li>
+				<li><a href="../../eZanmoto/Fields/fast_fields.html#methodget_field_names">get_field_names</a></li>
+				<li><a href="../../eZanmoto/Fields/fast_fields.html#methodget_field_value">get_field_value</a></li>
+				<li><a href="../../eZanmoto/Fields/fast_fields.html#methodget_post_field">get_post_field</a></li>
+				<li><a href="../../eZanmoto/Fields/fast_fields.html#methodis_field_attribute_set">is_field_attribute_set</a></li>
+				<li><a href="../../eZanmoto/Fields/fast_fields.html#methodoutput_add_field_panel">output_add_field_panel</a></li>
+				<li><a href="../../eZanmoto/Fields/fast_fields.html#methodoutput_fields">output_fields</a></li>
+				<li><a href="../../eZanmoto/Fields/fast_fields.html#methodoutput_field_table">output_field_table</a></li>
+				<li><a href="../../eZanmoto/Fields/fast_fields.html#methodparse_table_row">parse_table_row</a></li>
+				<li><a href="../../eZanmoto/Fields/fast_fields.html#methodsafe_get_field">safe_get_field</a></li>
+				<li><a href="../../eZanmoto/Fields/fast_fields.html#methodset_field_attribute">set_field_attribute</a></li>
+			</ul>
+</div>
+
+<div id="content">
+<hr>
+	<div class="contents">
+	</div>
+
+	<div class="leftCol">
+    	<h2>Inherited Variables</h2>
+		<h2>Inherited Constants</h2>
+		</div>
+
+	<div class="rightCol">
+	<h2>Inherited Methods</h2>
+		</div>
+	<br clear="all">
+	<hr>
+
+	<a name="class_details"></a>
+	<h2>Class Details</h2>
+	<p align="center"><strong>Wordpress Custom Field Object
+</strong></p>
+<p>Original code from <a href="http://ezanmoto.wordpress.com">Seán M.
+ Kelleher (ezanmoto@gmail.com)</a></p><h4>Tags:</h4>
+<ul>
+	<li><b>since</b> - 0.1</li>
+</ul>
+	<p class="small" style="color: #334B66;">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_vars"></a>
+	<h2>Class Variables</h2>
+		<a name="var$meta_table"></a>
+	<p></p>
+	<h4>$meta_table</h4>
+	<div class="indent">
+		<p class="linenumber">[line 51]</p>
+		<p align="center"><strong>The table name for the fast fields meta table.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>since</b> - 0.1</li>
+	<li><b>access</b> - public</li>
+	<li><b>usedby</b> - <a href="../../eZanmoto/Fields/fast_fields.html#method__construct">fast_fields::__construct()</a></li>
+</ul>
+		<p><b>Type:</b> string</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$table"></a>
+	<p></p>
+	<h4>$table</h4>
+	<div class="indent">
+		<p class="linenumber">[line 42]</p>
+		<p align="center"><strong>The table name for the fast fields table.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>since</b> - 0.1</li>
+	<li><b>access</b> - public</li>
+	<li><b>usedby</b> - <a href="../../eZanmoto/Fields/fast_fields.html#methodget_fields">fast_fields::get_fields()</a></li>
+	<li><b>usedby</b> - <a href="../../eZanmoto/Products/fast_products.html#methodget_product_meta">fast_products::get_product_meta()</a></li>
+	<li><b>usedby</b> - <a href="../../eZanmoto/Fields/fast_fields.html#methodfield_name_used">fast_fields::field_name_used()</a></li>
+	<li><b>usedby</b> - <a href="../../eZanmoto/Fields/fast_fields.html#method__construct">fast_fields::__construct()</a></li>
+	<li><b>usedby</b> - <a href="../../eZanmoto/Fields/fast_fields.html#methodget_field">fast_fields::get_field()</a></li>
+</ul>
+		<p><b>Type:</b> string</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_methods"></a>
+	<h2>Class Methods</h2>
+	
+	<a name="method__construct"></a>
+	<p></p>
+	<h3>__construct</h3>
+	<div class="indent">
+		<p>
+		<code>fast_fields __construct(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 103]</p>
+		<p align="center"><strong>The default constructor function.
+</strong></p>
+<p>Hooks {@code fast_fields::html_header()} to the  {@code admin_head-fast-cart_page_fast_fields} action.</p><p>Hooks {@code fast_fields::show_post_panel()} to the  {@code admin_menu} action.</p><p>Hooks {@code fast_fields::save_post()} to the {@code save_post}  action.</p><h4>Tags:</h4>
+<ul>
+	<li><b>since</b> - 0.1</li>
+	<li><b>access</b> - public</li>
+	<li><b>uses</b> - fast_fields::verify_tables()</li>
+	<li><b>uses</b> - fast_fields::show_post_panel()</li>
+	<li><b>uses</b> - wpdb::$prefix</li>
+	<li><b>uses</b> - fast_fields::save_post()</li>
+	<li><b>uses</b> - fast_fields::$prefix</li>
+	<li><b>uses</b> - <a href="../../eZanmoto/Fields/fast_fields.html#var$table">fast_fields::$table</a></li>
+	<li><b>uses</b> - fast_fields::html_header()</li>
+	<li><b>uses</b> - <a href="../../eZanmoto/Fields/fast_fields.html#var$meta_table">fast_fields::$meta_table</a></li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodadd_field"></a>
+	<p></p>
+	<h3>add_field</h3>
+	<div class="indent">
+		<p>
+		<code>void add_field(
+string
+$name, string
+$type, string
+$value, [int|NULL
+$post_id = NULL])</code>
+		</p>
+	
+		<p class="linenumber">[line 283]</p>
+		<p align="center"><strong>Adds a new field.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>since</b> - 0.1</li>
+	<li><b>access</b> - public</li>
+	<li><b>uses</b> - wpdb::insert</li>
+	<li><b>uses</b> - wpdb::get_var</li>
+	<li><b>uses</b> - debugger::add_error</li>
+	<li><b>uses</b> - fast_fields::table</li>
+	<li><b>uses</b> - debugger::add_alert</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$name</b> 
+		- 
+		The name of the new field.</li>
+			<li>
+		<span class="type">string</span>
+		<b>$type</b> 
+		- 
+		The type of the new field.</li>
+			<li>
+		<span class="type">string</span>
+		<b>$value</b> 
+		- 
+		The value of the new field.</li>
+			<li>
+		<span class="type">int|NULL</span>
+		<b>$post_id</b> 
+		- 
+		Contains NULL for a key field, 0 for   a global field, or any positive integer for a post  field.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodadd_field_attribute"></a>
+	<p></p>
+	<h3>add_field_attribute</h3>
+	<div class="indent">
+		<p>
+		<code>void add_field_attribute(
+string
+$attribute)</code>
+		</p>
+	
+		<p class="linenumber">[line 1101]</p>
+		<p align="center"><strong>Adds a field attribute to fast_fields.
+</strong></p>
+<p>Every field attribute needs to be registered before its use.  This is to avoid clashes with attribute names.</p><h4>Tags:</h4>
+<ul>
+	<li><b>since</b> - 0.4</li>
+	<li><b>access</b> - public</li>
+	<li><b>usedby</b> - <a href="../../eZanmoto/Carts/fast_carts.html#method__construct">fast_carts::__construct()</a></li>
+	<li><b>uses</b> - <a href="../../eZanmoto/Debugging/debugger.html#methodfatal">debugger::fatal()</a></li>
+	<li><b>uses</b> - fast_fields::$field_attributes</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$attribute</b> 
+		- 
+		The name of the attribute to add.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodedit_post_field"></a>
+	<p></p>
+	<h3>edit_post_field</h3>
+	<div class="indent">
+		<p>
+		<code>void edit_post_field(
+int
+$post_id, string
+$field_id, string
+$value)</code>
+		</p>
+	
+		<p class="linenumber">[line 475]</p>
+		<p align="center"><strong>Edits the value of a key field or global field for a particular  post.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>since</b> - 0.1</li>
+	<li><b>access</b> - public</li>
+	<li><b>uses</b> - fast_fields::$prefix</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">int</span>
+		<b>$post_id</b> 
+		- 
+		The post_id of the field.</li>
+			<li>
+		<span class="type">string</span>
+		<b>$field_id</b> 
+		- 
+		The field_id of the field whose value   is to change.</li>
+			<li>
+		<span class="type">string</span>
+		<b>$value</b> 
+		- 
+		This post's value for this field.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodfields_with_attribute"></a>
+	<p></p>
+	<h3>fields_with_attribute</h3>
+	<div class="indent">
+		<p>
+		<code>array fields_with_attribute(
+string
+$attribute)</code>
+		</p>
+	
+		<p class="linenumber">[line 1194]</p>
+		<p align="center"><strong>Gets all fields that have the specified attribute set.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - An indexed array of field_ids of the fields with   the specified attribute set.</li>
+	<li><b>since</b> - 0.4</li>
+	<li><b>access</b> - public</li>
+	<li><b>uses</b> - wpdb::get_col()</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$attribute</b> 
+		- 
+		The attribute to get. This must be   registered in {@code fast_fields::$field_attributes} using   {@code fast_fields::add_field_attribute()} before this   function is called.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodfield_name_used"></a>
+	<p></p>
+	<h3>field_name_used</h3>
+	<div class="indent">
+		<p>
+		<code>bool field_name_used(
+string
+$name, [int|NULL
+$post_id = NULL])</code>
+		</p>
+	
+		<p class="linenumber">[line 248]</p>
+		<p align="center"><strong>Checks to see if a key row, global row or post row exists with  the name specified.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - Returns true if the field name is used.</li>
+	<li><b>uses</b> - wpdb::get_var()</li>
+	<li><b>uses</b> - <a href="../../eZanmoto/Fields/fast_fields.html#var$table">fast_fields::$table</a></li>
+	<li><b>uses</b> - <a href="../../eZanmoto/Debugging/debugger.html#methodadd_error">debugger::add_error()</a></li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$name</b> 
+		- 
+		The name to check.</li>
+			<li>
+		<span class="type">int|NULL</span>
+		<b>$post_id</b> 
+		- 
+		Also checks against this post_id if it   isn't {@code NULL}.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodget_field"></a>
+	<p></p>
+	<h3>get_field</h3>
+	<div class="indent">
+		<p>
+		<code>array get_field(
+int
+$field_id)</code>
+		</p>
+	
+		<p class="linenumber">[line 361]</p>
+		<p align="center"><strong>Returns the attributes of a given field.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - An associative array containing the field   attributes.</li>
+	<li><b>since</b> - 0.1</li>
+	<li><b>access</b> - public</li>
+	<li><b>usedby</b> - <a href="../../eZanmoto/Products/fast_products.html#methodget_product_meta">fast_products::get_product_meta()</a></li>
+	<li><b>uses</b> - <a href="../../eZanmoto/Fields/fast_fields.html#var$table">fast_fields::$table</a></li>
+	<li><b>uses</b> - wpdb::get_row()</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">int</span>
+		<b>$field_id</b> 
+		- 
+		The field_id of the field to retrieve.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodget_fields"></a>
+	<p></p>
+	<h3>get_fields</h3>
+	<div class="indent">
+		<p>
+		<code>array get_fields(
+'key'|'global'|'post'
+$type, [int|NULL
+$post_id = NULL])</code>
+		</p>
+	
+		<p class="linenumber">[line 731]</p>
+		<p align="center"><strong>Retrieves all fields of a given type.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - An associative array of the key fields in the   fast_fields table.</li>
+	<li><b>since</b> - 0.1</li>
+	<li><b>access</b> - public</li>
+	<li><b>usedby</b> - <a href="../../eZanmoto/Fields/fast_fields.html#methodoutput_fields">fast_fields::output_fields()</a></li>
+	<li><b>usedby</b> - <a href="../../eZanmoto/Fields/fast_fields.html#methodoutput_field_table">fast_fields::output_field_table()</a></li>
+	<li><b>usedby</b> - <a href="../../eZanmoto/Fields/fast_fields.html#methodsafe_get_field">fast_fields::safe_get_field()</a></li>
+	<li><b>uses</b> - <a href="../../eZanmoto/Fields/fast_fields.html#var$table">fast_fields::$table</a></li>
+	<li><b>uses</b> - <a href="../../eZanmoto/Debugging/debugger.html#methodfatal">debugger::fatal()</a></li>
+	<li><b>uses</b> - wpdb::get_results()</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">'key'|'global'|'post'</span>
+		<b>$type</b> 
+		- 
+		The type of fields to   retrieve.</li>
+			<li>
+		<span class="type">int|NULL</span>
+		<b>$post_id</b> 
+		- 
+		Set to the {@code post_id} of a   specific post if local values for a post are wanted.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodget_field_id"></a>
+	<p></p>
+	<h3>get_field_id</h3>
+	<div class="indent">
+		<p>
+		<code>string get_field_id(
+
+$field_name, [
+$post_id = NULL], int
+$field_id)</code>
+		</p>
+	
+		<p class="linenumber">[line 425]</p>
+		<p align="center"><strong>Returns the field_id of a field.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - The value of the field.</li>
+	<li><b>since</b> - 0.4</li>
+	<li><b>access</b> - public</li>
+	<li><b>uses</b> - wpdb::get_var()</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">int</span>
+		<b>$field_id</b> 
+		- 
+		The field_id of the field to get the value   of.</li>
+			<li>
+		<span class="type"></span>
+		<b>$field_name</b> 
+		- 
+		</li>
+			<li>
+		<span class="type"></span>
+		<b>$post_id</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodget_field_ids"></a>
+	<p></p>
+	<h3>get_field_ids</h3>
+	<div class="indent">
+		<p>
+		<code>void get_field_ids(
+
+$type, [
+$post_id = NULL])</code>
+		</p>
+	
+		<p class="linenumber">[line 1226]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type"></span>
+		<b>$type</b> 
+		- 
+		</li>
+			<li>
+		<span class="type"></span>
+		<b>$post_id</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodget_field_name"></a>
+	<p></p>
+	<h3>get_field_name</h3>
+	<div class="indent">
+		<p>
+		<code>string get_field_name(
+int
+$field_id)</code>
+		</p>
+	
+		<p class="linenumber">[line 403]</p>
+		<p align="center"><strong>Returns the name of a field.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - The name of the field.</li>
+	<li><b>since</b> - 0.1</li>
+	<li><b>access</b> - public</li>
+	<li><b>usedby</b> - <a href="../../eZanmoto/Carts/fast_carts.html#methodget_checkout_field_names">fast_carts::get_checkout_field_names()</a></li>
+	<li><b>uses</b> - wpdb::get_var()</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">int</span>
+		<b>$field_id</b> 
+		- 
+		The field_id of the field to get the name   of.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodget_field_names"></a>
+	<p></p>
+	<h3>get_field_names</h3>
+	<div class="indent">
+		<p>
+		<code>void get_field_names(
+
+$type, [
+$post_id = NULL])</code>
+		</p>
+	
+		<p class="linenumber">[line 1257]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type"></span>
+		<b>$type</b> 
+		- 
+		</li>
+			<li>
+		<span class="type"></span>
+		<b>$post_id</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodget_field_value"></a>
+	<p></p>
+	<h3>get_field_value</h3>
+	<div class="indent">
+		<p>
+		<code>string get_field_value(
+int
+$field_id)</code>
+		</p>
+	
+		<p class="linenumber">[line 451]</p>
+		<p align="center"><strong>Returns the value of a field.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - The value of the field.</li>
+	<li><b>since</b> - 0.3</li>
+	<li><b>access</b> - public</li>
+	<li><b>uses</b> - wpdb::get_var()</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">int</span>
+		<b>$field_id</b> 
+		- 
+		The field_id of the field to get the value   of.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodget_post_field"></a>
+	<p></p>
+	<h3>get_post_field</h3>
+	<div class="indent">
+		<p>
+		<code>string get_post_field(
+int
+$post_id, string|NULL
+$field_id)</code>
+		</p>
+	
+		<p class="linenumber">[line 492]</p>
+		<p align="center"><strong>Returns the value of a key field or global field for a particular  post.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - The value of the field for this post.</li>
+	<li><b>since</b> - 0.1</li>
+	<li><b>access</b> - public</li>
+	<li><b>usedby</b> - <a href="../../eZanmoto/Products/fast_products.html#methodget_product_meta">fast_products::get_product_meta()</a></li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">int</span>
+		<b>$post_id</b> 
+		- 
+		The post_id of the field.</li>
+			<li>
+		<span class="type">string|NULL</span>
+		<b>$field_id</b> 
+		- 
+		The field_id of the field whose   value is to be retrieved.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodis_field_attribute_set"></a>
+	<p></p>
+	<h3>is_field_attribute_set</h3>
+	<div class="indent">
+		<p>
+		<code>bool is_field_attribute_set(
+int
+$field_id, string
+$attribute)</code>
+		</p>
+	
+		<p class="linenumber">[line 1167]</p>
+		<p align="center"><strong>Gets the value of a field attribute.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - The value of the field's attribute.</li>
+	<li><b>since</b> - 0.4</li>
+	<li><b>access</b> - public</li>
+	<li><b>usedby</b> - <a href="../../eZanmoto/Products/fast_products.html#methodis_input">fast_products::is_input()</a></li>
+	<li><b>usedby</b> - <a href="../../eZanmoto/Carts/fast_carts.html#methodget_checkout_field_ids">fast_carts::get_checkout_field_ids()</a></li>
+	<li><b>usedby</b> - <a href="../../eZanmoto/Carts/fast_carts.html#methodis_checkout_field">fast_carts::is_checkout_field()</a></li>
+	<li><b>uses</b> - wpdb::get_row()</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">int</span>
+		<b>$field_id</b> 
+		- 
+		The field_id of the field whose attribute   is to be retrieved.</li>
+			<li>
+		<span class="type">string</span>
+		<b>$attribute</b> 
+		- 
+		The attribute to get. This must be   registered in {@code fast_fields::$field_attributes} using   {@code fast_fields::add_field_attribute()} before this   function is called.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodoutput_add_field_panel"></a>
+	<p></p>
+	<h3>output_add_field_panel</h3>
+	<div class="indent">
+		<p>
+		<code>void output_add_field_panel(
+[string
+$title = 'Add New Field'])</code>
+		</p>
+	
+		<p class="linenumber">[line 680]</p>
+		<p align="center"><strong>Outputs an &quot;Add Field&quot; panel.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>since</b> - 0.1</li>
+	<li><b>access</b> - public</li>
+	<li><b>uses</b> - fast_fields::$prefix</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$title</b> 
+		- 
+		The title to output on the panel.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodoutput_fields"></a>
+	<p></p>
+	<h3>output_fields</h3>
+	<div class="indent">
+		<p>
+		<code>void output_fields(
+'key'|'global'|'post'
+$type, 'edit'|'input'|'output'
+$format, [int|NULL
+$post_id = NULL])</code>
+		</p>
+	
+		<p class="linenumber">[line 880]</p>
+		<p align="center"><strong>Outputs all fields of a specified type.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>since</b> - 0.3</li>
+	<li><b>access</b> - public</li>
+	<li><b>uses</b> - fast_fields::parse_field()</li>
+	<li><b>uses</b> - <a href="../../eZanmoto/Fields/fast_fields.html#methodget_fields">fast_fields::get_fields()</a></li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">'key'|'global'|'post'</span>
+		<b>$type</b> 
+		- 
+		The type of field to format.</li>
+			<li>
+		<span class="type">'edit'|'input'|'output'</span>
+		<b>$format</b> 
+		- 
+		How to format the   fields.</li>
+			<li>
+		<span class="type">int|NULL</span>
+		<b>$post_id</b> 
+		- 
+		The post_id of the post field, NULL if   the field is not a post field.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodoutput_field_table"></a>
+	<p></p>
+	<h3>output_field_table</h3>
+	<div class="indent">
+		<p>
+		<code>void output_field_table(
+'key'|'global'|'post'
+$type, 'edit'|'input'|'output'
+$format, [int|NULL
+$post_id = NULL])</code>
+		</p>
+	
+		<p class="linenumber">[line 909]</p>
+		<p align="center"><strong>Outputs a table containing all fields of a specified type.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>since</b> - 0.1</li>
+	<li><b>access</b> - public</li>
+	<li><b>uses</b> - <a href="../../eZanmoto/Fields/fast_fields.html#methodparse_table_row">fast_fields::parse_table_row()</a></li>
+	<li><b>uses</b> - fast_fields::parse_field()</li>
+	<li><b>uses</b> - <a href="../../eZanmoto/Fields/fast_fields.html#methodget_fields">fast_fields::get_fields()</a></li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">'key'|'global'|'post'</span>
+		<b>$type</b> 
+		- 
+		The type of field to format.</li>
+			<li>
+		<span class="type">'edit'|'input'|'output'</span>
+		<b>$format</b> 
+		- 
+		How to format the   fields.</li>
+			<li>
+		<span class="type">int|NULL</span>
+		<b>$post_id</b> 
+		- 
+		The post_id of the post field, NULL if   the field is not a post field.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodparse_table_row"></a>
+	<p></p>
+	<h3>parse_table_row</h3>
+	<div class="indent">
+		<p>
+		<code>string parse_table_row(
+array
+$components)</code>
+		</p>
+	
+		<p class="linenumber">[line 857]</p>
+		<p align="center"><strong>Parses an array of row components into a string in the format  of a HTML table row.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - A string formatted to a HTML table row.</li>
+	<li><b>since</b> - 0.1</li>
+	<li><b>access</b> - public</li>
+	<li><b>usedby</b> - <a href="../../eZanmoto/Fields/fast_fields.html#methodoutput_field_table">fast_fields::output_field_table()</a></li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">array</span>
+		<b>$components</b> 
+		- 
+		The components to be put into the   table row.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodsafe_get_field"></a>
+	<p></p>
+	<h3>safe_get_field</h3>
+	<div class="indent">
+		<p>
+		<code>array safe_get_field(
+int
+$field_id)</code>
+		</p>
+	
+		<p class="linenumber">[line 384]</p>
+		<p align="center"><strong>Returns the attributes of a given field in a safe HTML format.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - An associative array containing the field   attributes.</li>
+	<li><b>since</b> - 0.3</li>
+	<li><b>access</b> - public</li>
+	<li><b>uses</b> - wpdb::get_row()</li>
+	<li><b>uses</b> - <a href="../../eZanmoto/Fields/fast_fields.html#methodget_fields">fast_fields::get_fields()</a></li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">int</span>
+		<b>$field_id</b> 
+		- 
+		The field_id of the field to retrieve.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodset_field_attribute"></a>
+	<p></p>
+	<h3>set_field_attribute</h3>
+	<div class="indent">
+		<p>
+		<code>void set_field_attribute(
+int
+$field_id, string
+$attribute, bool
+$value)</code>
+		</p>
+	
+		<p class="linenumber">[line 1129]</p>
+		<p align="center"><strong>Sets or unsets the value of a field attribute.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>since</b> - 0.4</li>
+	<li><b>access</b> - public</li>
+	<li><b>uses</b> - wpdb::query()</li>
+	<li><b>uses</b> - wpdb::insert()</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">int</span>
+		<b>$field_id</b> 
+		- 
+		The field_id of the field whose attribute   is to be set.</li>
+			<li>
+		<span class="type">string</span>
+		<b>$attribute</b> 
+		- 
+		The attribute to set. This must be   registered in {@code fast_fields::$field_attributes} using   {@code fast_fields::add_field_attribute()} before this   function is called.</li>
+			<li>
+		<span class="type">bool</span>
+		<b>$value</b> 
+		- 
+		Set the value of the attribute to this   value.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_consts"></a>
+	<h2>Class Constants</h2>
+	</div>
+	<div id="credit">
+		<hr>
+		Documentation generated on Sun, 22 May 2011 13:11:42 +0200 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+	</div>
+</div>
+</body>
+</html>

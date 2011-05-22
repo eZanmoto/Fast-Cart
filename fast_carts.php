@@ -260,8 +260,8 @@ class fast_carts{
      *
      * Hooked to the {@code wp_head} action.
      *
-	 * @uses fast_functions::output_css_links()
-	 * @uses fast_functions::output_js_links()
+     * @uses fast_functions::output_css_links()
+     * @uses fast_functions::output_js_links()
      * @since 0.4
      * @access private
      */
@@ -269,8 +269,9 @@ class fast_carts{
 		global $fast_functions;
 
 		$css_files = array( 'fast_carts', 'checkout',
-							'smoothness/jquery-ui-1.8.6.custom' );
-		$js_files  = array( 'jquery-ui-1.8.6.custom.min', 'checkout' );
+				    'smoothness/jquery-ui-1.8.6.custom' );
+		$js_files  = array( 'jquery-ui-1.4.3.min',
+				    'jquery-ui-1.8.6.custom.min', 'checkout' );
 
 		$fast_functions->output_css_links( $css_files );
 		$fast_functions->output_js_links(  $js_files  );
