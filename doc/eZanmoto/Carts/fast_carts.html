@@ -1,0 +1,806 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Docs For Class fast_carts</title>
+	<link rel="stylesheet" type="text/css" id="layout" href="../../media/layout.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../../media/style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../../media/print.css" media="print">
+</head>
+
+<body>
+<div id="header">
+	<div id="navLinks">
+        
+                                                        
+                            	        [ <a href="../../classtrees_eZanmoto.html">Class Tree: eZanmoto</a> ]
+            [ <a href="../../elementindex_eZanmoto.html">Index: eZanmoto</a> ]
+        		[ <a href="../../elementindex.html">All elements</a> ]		
+	</div>
+	<div id="packagePosition">
+		<div id="packageTitle2">eZanmoto</div>
+		<div id="packageTitle">eZanmoto</div>
+		<div id="elementPath">Carts &middot; </div>
+	</div>
+</div>
+
+<div id="nav" class="small">
+	<div id="packages">
+		Packages:
+					<p><a href="../../li_default.html">default</a></p>
+					<p><a href="../../li_eZanmoto.html">eZanmoto</a></p>
+			</div>
+
+				<div id="index">
+			<div id="files">
+								Files:<br>
+					subpackage <b>Carts</b><br>			<a href="../../eZanmoto/Carts/_fast_carts.php.html">		fast_carts.php
+		</a><br>
+		subpackage <b>Debugging</b><br>			<a href="../../eZanmoto/Debugging/_debugger.php.html">		debugger.php
+		</a><br>
+		subpackage <b>FastCart</b><br>			<a href="../../eZanmoto/FastCart/_fast_cart.php.html">		fast_cart.php
+		</a><br>
+		subpackage <b>Fields</b><br>			<a href="../../eZanmoto/Fields/_fast_fields.php.html">		fast_fields.php
+		</a><br>
+		subpackage <b>Products</b><br>			<a href="../../eZanmoto/Products/_fast_products.php.html">		fast_products.php
+		</a><br>
+		subpackage <b>Util</b><br>			<a href="../../eZanmoto/Util/_fast_functions.php.html">		fast_functions.php
+		</a><br>
+				</div>
+			<div id="interfaces">
+							</div>
+			<div id="classes">
+				Classes:<br>
+					<b>Debugging</b><br>			<a href="../../eZanmoto/Debugging/debugger.html">		debugger
+		</a><br>
+		<b>FastCart</b><br>			<a href="../../eZanmoto/FastCart/fast_cart.html">		fast_cart
+		</a><br>
+		<b>Carts</b><br>			<a href="../../eZanmoto/Carts/fast_carts.html">		fast_carts
+		</a><br>
+		<b>Fields</b><br>			<a href="../../eZanmoto/Fields/fast_fields.html">		fast_fields
+		</a><br>
+		<b>Util</b><br>			<a href="../../eZanmoto/Util/fast_functions.html">		fast_functions
+		</a><br>
+		<b>Products</b><br>			<a href="../../eZanmoto/Products/fast_products.html">		fast_products
+		</a><br>
+				</div>
+		</div>
+	</div>
+
+<div id="body">
+	    		<h1>Class: fast_carts</h1>
+	<p style="margin: 0px;">Source Location: /fast_carts.php</p>
+	
+
+<div class="leftcol">
+	<h3><a href="#class_details">Class Overview</a> <span class="smalllinenumber">[line 28]</span></h3>
+	<div id="classTree"><pre></pre>
+</div>
+	<div class="small">
+	<p>Wordpress Shopping Cart Object</p>
+		<h4>Author(s):</h4>
+	<ul>
+								<li>Se&amp;aacute;n M. Kelleher</li>
+																</ul>
+	<h4>Version:</h4>
+	<ul>
+													<li>1.0.2</li>
+											</ul>
+
+	<h4>Copyright:</h4>
+	<ul>
+																		</li>
+	</div>
+</div>
+
+<div class="middlecol">
+	<h3><a href="#class_vars">Variables</a></h3>
+	<ul class="small">
+				<li><a href="../../eZanmoto/Carts/fast_carts.html#var$meta_table">$meta_table</a></li>
+				<li><a href="../../eZanmoto/Carts/fast_carts.html#var$prefix">$prefix</a></li>
+				<li><a href="../../eZanmoto/Carts/fast_carts.html#var$sales_table">$sales_table</a></li>
+				<li><a href="../../eZanmoto/Carts/fast_carts.html#var$table">$table</a></li>
+				<li><a href="../../eZanmoto/Carts/fast_carts.html#var$username">$username</a></li>
+				<li><a href="../../eZanmoto/Carts/fast_carts.html#var$user_id">$user_id</a></li>
+			</ul>
+	<h3><a href="#class_consts">Constants</a></h3>
+	<ul class="small">
+			</ul>
+</div>
+<div class="rightcol">
+	<h3><a href="#class_methods">Methods</a></h3>
+	<ul class="small">
+				<li><a href="../../eZanmoto/Carts/fast_carts.html#method__construct">__construct</a></li>
+				<li><a href="../../eZanmoto/Carts/fast_carts.html#methodadd_product_meta">add_product_meta</a></li>
+				<li><a href="../../eZanmoto/Carts/fast_carts.html#methodcheckout_exists">checkout_exists</a></li>
+				<li><a href="../../eZanmoto/Carts/fast_carts.html#methoddelete_product">delete_product</a></li>
+				<li><a href="../../eZanmoto/Carts/fast_carts.html#methodformat_product">format_product</a></li>
+				<li><a href="../../eZanmoto/Carts/fast_carts.html#methodget_cart_ids">get_cart_ids</a></li>
+				<li><a href="../../eZanmoto/Carts/fast_carts.html#methodget_cart_meta">get_cart_meta</a></li>
+				<li><a href="../../eZanmoto/Carts/fast_carts.html#methodget_checkout_field_ids">get_checkout_field_ids</a></li>
+				<li><a href="../../eZanmoto/Carts/fast_carts.html#methodget_checkout_field_names">get_checkout_field_names</a></li>
+				<li><a href="../../eZanmoto/Carts/fast_carts.html#methodget_checkout_post_id">get_checkout_post_id</a></li>
+				<li><a href="../../eZanmoto/Carts/fast_carts.html#methodget_payment_info">get_payment_info</a></li>
+				<li><a href="../../eZanmoto/Carts/fast_carts.html#methodget_product_amount">get_product_amount</a></li>
+				<li><a href="../../eZanmoto/Carts/fast_carts.html#methodget_product_price">get_product_price</a></li>
+				<li><a href="../../eZanmoto/Carts/fast_carts.html#methodget_sales">get_sales</a></li>
+				<li><a href="../../eZanmoto/Carts/fast_carts.html#methodget_users_cart">get_users_cart</a></li>
+				<li><a href="../../eZanmoto/Carts/fast_carts.html#methodis_checkout_field">is_checkout_field</a></li>
+				<li><a href="../../eZanmoto/Carts/fast_carts.html#methodis_debugging">is_debugging</a></li>
+				<li><a href="../../eZanmoto/Carts/fast_carts.html#methodis_logged_in">is_logged_in</a></li>
+				<li><a href="../../eZanmoto/Carts/fast_carts.html#methodprocess_sale">process_sale</a></li>
+				<li><a href="../../eZanmoto/Carts/fast_carts.html#methodverify_checkout_content">verify_checkout_content</a></li>
+			</ul>
+</div>
+
+<div id="content">
+<hr>
+	<div class="contents">
+	</div>
+
+	<div class="leftCol">
+    	<h2>Inherited Variables</h2>
+		<h2>Inherited Constants</h2>
+		</div>
+
+	<div class="rightCol">
+	<h2>Inherited Methods</h2>
+		</div>
+	<br clear="all">
+	<hr>
+
+	<a name="class_details"></a>
+	<h2>Class Details</h2>
+	<p align="center"><strong>Wordpress Shopping Cart Object
+</strong></p>
+<p>Original code from <a href="http://ezanmoto.wordpress.com">Se&amp;aacute;n M.
+ Kelleher (ezanmoto@gmail.com)</a></p><h4>Tags:</h4>
+<ul>
+	<li><b>author</b> - Se&amp;aacute;n M. Kelleher</li>
+	<li><b>version</b> - 1.0.2</li>
+	<li><b>since</b> - 0.3</li>
+</ul>
+	<p class="small" style="color: #334B66;">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_vars"></a>
+	<h2>Class Variables</h2>
+		<a name="var$meta_table"></a>
+	<p></p>
+	<h4>$meta_table</h4>
+	<div class="indent">
+		<p class="linenumber">[line 46]</p>
+		<p align="center"><strong>The table name for the fast carts meta table.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>since</b> - 0.3</li>
+	<li><b>access</b> - public</li>
+	<li><b>usedby</b> - <a href="../../eZanmoto/Carts/fast_carts.html#method__construct">fast_carts::__construct()</a></li>
+</ul>
+		<p><b>Type:</b> string</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$prefix"></a>
+	<p></p>
+	<h4>$prefix</h4>
+	<div class="indent">
+		<p class="linenumber">[line 67]</p>
+		<p align="center"><strong>Prepended to various tags that fast_carts uses.
+</strong></p>
+<p>Change this to avoid namespace clashes with HTML attributes and  data in other classes.</p><h4>Tags:</h4>
+<ul>
+	<li><b>since</b> - 0.3</li>
+	<li><b>access</b> - public</li>
+	<li><b>usedby</b> - <a href="../../eZanmoto/Carts/fast_carts.html#methodformat_product">fast_carts::format_product()</a></li>
+	<li><b>usedby</b> - <a href="../../eZanmoto/Carts/fast_carts.html#method__construct">fast_carts::__construct()</a></li>
+	<li><b>usedby</b> - <a href="../../eZanmoto/Carts/fast_carts.html#methodget_checkout_post_id">fast_carts::get_checkout_post_id()</a></li>
+</ul>
+		<p><b>Type:</b> string</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$sales_table"></a>
+	<p></p>
+	<h4>$sales_table</h4>
+	<div class="indent">
+		<p class="linenumber">[line 55]</p>
+		<p align="center"><strong>The table name for the fast carts sales table.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>since</b> - 0.3</li>
+	<li><b>access</b> - public</li>
+	<li><b>usedby</b> - <a href="../../eZanmoto/Carts/fast_carts.html#method__construct">fast_carts::__construct()</a></li>
+</ul>
+		<p><b>Type:</b> string</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$table"></a>
+	<p></p>
+	<h4>$table</h4>
+	<div class="indent">
+		<p class="linenumber">[line 37]</p>
+		<p align="center"><strong>The table name for the fast carts table.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>since</b> - 0.3</li>
+	<li><b>access</b> - public</li>
+	<li><b>usedby</b> - <a href="../../eZanmoto/Carts/fast_carts.html#method__construct">fast_carts::__construct()</a></li>
+</ul>
+		<p><b>Type:</b> string</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$username"></a>
+	<p></p>
+	<h4>$username</h4>
+	<div class="indent">
+		<p class="linenumber">[line 91]</p>
+		<p align="center"><strong>The username of the current user or else 'Guest'.
+</strong></p>
+<p>The username of the current user. If there is no user currently  logged in, this contains the string 'Guest'.</p><h4>Tags:</h4>
+<ul>
+	<li><b>since</b> - 0.3</li>
+	<li><b>access</b> - public</li>
+</ul>
+		<p><b>Type:</b> string</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$user_id"></a>
+	<p></p>
+	<h4>$user_id</h4>
+	<div class="indent">
+		<p class="linenumber">[line 79]</p>
+		<p align="center"><strong>The user_id of the current user or else the session_id.
+</strong></p>
+<p>The user_id of the current user. If there is no user currently  logged in, this contains the session_id.</p><h4>Tags:</h4>
+<ul>
+	<li><b>since</b> - 0.3</li>
+	<li><b>access</b> - public</li>
+</ul>
+		<p><b>Type:</b> int</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_methods"></a>
+	<h2>Class Methods</h2>
+	
+	<a name="method__construct"></a>
+	<p></p>
+	<h3>__construct</h3>
+	<div class="indent">
+		<p>
+		<code>fast_carts __construct(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 126]</p>
+		<p align="center"><strong>The default constructor function.
+</strong></p>
+<p>Hooks {@code fast_carts::html_header()} to the {@code wp_head}  action.</p><p>Hooks {@code fast_carts::is_working()} to the  {@code admin-init} action.</p><p>Hooks {@code fast_carts::format_product()} to the  {@code the_content} action.</p><h4>Tags:</h4>
+<ul>
+	<li><b>since</b> - 0.3</li>
+	<li><b>access</b> - public</li>
+	<li><b>uses</b> - <a href="../../eZanmoto/Fields/fast_fields.html#methodadd_field_attribute">fast_fields::add_field_attribute()</a></li>
+	<li><b>uses</b> - fast_products::$prefix</li>
+	<li><b>uses</b> - wpdb::$prefix</li>
+	<li><b>uses</b> - fast_fields::$prefix</li>
+	<li><b>uses</b> - fast_carts::is_working()</li>
+	<li><b>uses</b> - <a href="../../eZanmoto/Carts/fast_carts.html#var$meta_table">fast_carts::$meta_table</a></li>
+	<li><b>uses</b> - <a href="../../eZanmoto/Carts/fast_carts.html#var$prefix">fast_carts::$prefix</a></li>
+	<li><b>uses</b> - <a href="../../eZanmoto/Carts/fast_carts.html#var$sales_table">fast_carts::$sales_table</a></li>
+	<li><b>uses</b> - <a href="../../eZanmoto/Carts/fast_carts.html#var$table">fast_carts::$table</a></li>
+	<li><b>uses</b> - <a href="../../eZanmoto/Debugging/debugger.html#methodfatal">debugger::fatal()</a></li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodadd_product_meta"></a>
+	<p></p>
+	<h3>add_product_meta</h3>
+	<div class="indent">
+		<p>
+		<code>void add_product_meta(
+
+$cart_id, 
+$product_id)</code>
+		</p>
+	
+		<p class="linenumber">[line 969]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type"></span>
+		<b>$cart_id</b> 
+		- 
+		</li>
+			<li>
+		<span class="type"></span>
+		<b>$product_id</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodcheckout_exists"></a>
+	<p></p>
+	<h3>checkout_exists</h3>
+	<div class="indent">
+		<p>
+		<code>void checkout_exists(
+bool
+0)</code>
+		</p>
+	
+		<p class="linenumber">[line 369]</p>
+		<p align="center"><strong>Returns {@code true} if a published page with a name  {@code CHECKOUT_PAGE_NAME} exists.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>since</b> - 0.3</li>
+	<li><b>access</b> - public</li>
+	<li><b>uses</b> - wpdb::get_row()</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">bool</span>
+		<b>0</b> 
+		- 
+		{@code true} if a page with a name   {@code CHECKOUT_PAGE_NAME} exists.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methoddelete_product"></a>
+	<p></p>
+	<h3>delete_product</h3>
+	<div class="indent">
+		<p>
+		<code>void delete_product(
+
+$cart_id)</code>
+		</p>
+	
+		<p class="linenumber">[line 618]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type"></span>
+		<b>$cart_id</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodformat_product"></a>
+	<p></p>
+	<h3>format_product</h3>
+	<div class="indent">
+		<p>
+		<code>void format_product(
+
+$content)</code>
+		</p>
+	
+		<p class="linenumber">[line 474]</p>
+		<p align="center"><strong>Formats a post as a product if the post is identified as a  product.
+</strong></p>
+<p>Hooked to the {@code fast_fields::the_content} filter.</p><h4>Tags:</h4>
+<ul>
+	<li><b>since</b> - 0.3</li>
+	<li><b>uses</b> - <a href="../../eZanmoto/Products/fast_products.html#methodoutput_product_fields">fast_products::output_product_fields()</a></li>
+	<li><b>uses</b> - <a href="../../eZanmoto/Carts/fast_carts.html#var$prefix">fast_carts::$prefix</a></li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type"></span>
+		<b>$content</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodget_cart_ids"></a>
+	<p></p>
+	<h3>get_cart_ids</h3>
+	<div class="indent">
+		<p>
+		<code>void get_cart_ids(
+
+$product_id)</code>
+		</p>
+	
+		<p class="linenumber">[line 1031]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type"></span>
+		<b>$product_id</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodget_cart_meta"></a>
+	<p></p>
+	<h3>get_cart_meta</h3>
+	<div class="indent">
+		<p>
+		<code>void get_cart_meta(
+
+$product_id, 
+$field_name)</code>
+		</p>
+	
+		<p class="linenumber">[line 1043]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type"></span>
+		<b>$product_id</b> 
+		- 
+		</li>
+			<li>
+		<span class="type"></span>
+		<b>$field_name</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodget_checkout_field_ids"></a>
+	<p></p>
+	<h3>get_checkout_field_ids</h3>
+	<div class="indent">
+		<p>
+		<code>array get_checkout_field_ids(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 881]</p>
+		<p align="center"><strong>Returns the field_ids of all fields which should be output in  checkout contexts.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - An indexed array of all field_ids whose fields   should be displayed in a checkout context.</li>
+	<li><b>since</b> - 0.4</li>
+	<li><b>access</b> - public</li>
+	<li><b>usedby</b> - <a href="../../eZanmoto/Carts/fast_carts.html#methodget_checkout_field_names">fast_carts::get_checkout_field_names()</a></li>
+	<li><b>uses</b> - <a href="../../eZanmoto/Fields/fast_fields.html#methodis_field_attribute_set">fast_fields::is_field_attribute_set()</a></li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodget_checkout_field_names"></a>
+	<p></p>
+	<h3>get_checkout_field_names</h3>
+	<div class="indent">
+		<p>
+		<code>array get_checkout_field_names(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 901]</p>
+		<p align="center"><strong>Returns the names of all fields which should be output in  checkout contexts.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - An indexed array of all field names whose fields   should be displayed in a checkout context.</li>
+	<li><b>since</b> - 0.4</li>
+	<li><b>access</b> - public</li>
+	<li><b>uses</b> - <a href="../../eZanmoto/Fields/fast_fields.html#methodget_field_name">fast_fields::get_field_name()</a></li>
+	<li><b>uses</b> - <a href="../../eZanmoto/Carts/fast_carts.html#methodget_checkout_field_ids">fast_carts::get_checkout_field_ids()</a></li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodget_checkout_post_id"></a>
+	<p></p>
+	<h3>get_checkout_post_id</h3>
+	<div class="indent">
+		<p>
+		<code>int get_checkout_post_id(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 419]</p>
+		<p align="center"><strong>Returns the post_id of the fast_carts checkout page.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - The post_id of the fast_carts checkout page.</li>
+	<li><b>since</b> - 0.3</li>
+	<li><b>access</b> - public</li>
+	<li><b>uses</b> - <a href="../../eZanmoto/Carts/fast_carts.html#var$prefix">fast_carts::$prefix</a></li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodget_payment_info"></a>
+	<p></p>
+	<h3>get_payment_info</h3>
+	<div class="indent">
+		<p>
+		<code>void get_payment_info(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 1210]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodget_product_amount"></a>
+	<p></p>
+	<h3>get_product_amount</h3>
+	<div class="indent">
+		<p>
+		<code>int get_product_amount(
+int
+$cart_id)</code>
+		</p>
+	
+		<p class="linenumber">[line 658]</p>
+		<p align="center"><strong>Returns the total amount of one product the current user has in  their cart.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - The amount of a product the current user has.</li>
+	<li><b>since</b> - 0.3</li>
+	<li><b>access</b> - public</li>
+	<li><b>uses</b> - wpdb::get_var()</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">int</span>
+		<b>$cart_id</b> 
+		- 
+		The cart_id that contains the product.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodget_product_price"></a>
+	<p></p>
+	<h3>get_product_price</h3>
+	<div class="indent">
+		<p>
+		<code>void get_product_price(
+
+$product_id)</code>
+		</p>
+	
+		<p class="linenumber">[line 1204]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type"></span>
+		<b>$product_id</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodget_sales"></a>
+	<p></p>
+	<h3>get_sales</h3>
+	<div class="indent">
+		<p>
+		<code>void get_sales(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 1325]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodget_users_cart"></a>
+	<p></p>
+	<h3>get_users_cart</h3>
+	<div class="indent">
+		<p>
+		<code>array get_users_cart(
+int
+$user_id)</code>
+		</p>
+	
+		<p class="linenumber">[line 686]</p>
+		<p align="center"><strong>Returns all rows from the fast_carts table that belong to the  specified user.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - An associative array containing the rows of the   current user's cart.</li>
+	<li><b>since</b> - 0.3</li>
+	<li><b>access</b> - public</li>
+	<li><b>uses</b> - wpdb::get_results</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">int</span>
+		<b>$user_id</b> 
+		- 
+		The user_id of the user whose cart is to be   retrieved.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodis_checkout_field"></a>
+	<p></p>
+	<h3>is_checkout_field</h3>
+	<div class="indent">
+		<p>
+		<code>bool is_checkout_field(
+int
+$field_id)</code>
+		</p>
+	
+		<p class="linenumber">[line 862]</p>
+		<p align="center"><strong>Returns whether a particular field should be output in checkout  contexts.
+</strong></p>
+<p>If true, this field is output in the widget section and the  checkout_page.</p><h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - {@code true} if the field should be displayed in   checkout contexts.</li>
+	<li><b>since</b> - 0.4</li>
+	<li><b>access</b> - public</li>
+	<li><b>uses</b> - <a href="../../eZanmoto/Fields/fast_fields.html#methodis_field_attribute_set">fast_fields::is_field_attribute_set()</a></li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">int</span>
+		<b>$field_id</b> 
+		- 
+		The field_id of the field whose   'In Checkout' attribute is to be checked.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodis_debugging"></a>
+	<p></p>
+	<h3>is_debugging</h3>
+	<div class="indent">
+		<p>
+		<code>void is_debugging(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 1199]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodis_logged_in"></a>
+	<p></p>
+	<h3>is_logged_in</h3>
+	<div class="indent">
+		<p>
+		<code>void is_logged_in(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 1374]</p>
+		<h4>Tags:</h4>
+<ul>
+	<li><b>since</b> - 1.0.1</li>
+	<li><b>access</b> - public</li>
+	<li><b>uses</b> - fast_carts::$is_logged_in</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodprocess_sale"></a>
+	<p></p>
+	<h3>process_sale</h3>
+	<div class="indent">
+		<p>
+		<code>void process_sale(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 1344]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodverify_checkout_content"></a>
+	<p></p>
+	<h3>verify_checkout_content</h3>
+	<div class="indent">
+		<p>
+		<code>void verify_checkout_content(
+bool
+0)</code>
+		</p>
+	
+		<p class="linenumber">[line 395]</p>
+		<p align="center"><strong>Returns {@code true} if the checkout page contains the content  {@code CHECKOUT_PAGE_CONTENT}.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>since</b> - 0.3</li>
+	<li><b>access</b> - public</li>
+	<li><b>uses</b> - wpdb::get_row()</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">bool</span>
+		<b>0</b> 
+		- 
+		{@code true} if the checkout page contains the   content {@code CHECKOUT_PAGE_CONTENT}.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_consts"></a>
+	<h2>Class Constants</h2>
+	</div>
+	<div id="credit">
+		<hr>
+		Documentation generated on Sun, 22 May 2011 13:38:22 +0200 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+	</div>
+</div>
+</body>
+</html>
