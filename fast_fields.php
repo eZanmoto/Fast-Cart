@@ -3,7 +3,18 @@
 require ('fast_functions.php');
 require ('debugger.php');
 
+/**
+ * The name of the fast_fields table.
+ *
+ * @since 1.0.2
+ */
 define('FAST_FIELDS_TABLE', 'fastfields');
+
+/**
+ * The name of the fast_fields meta table.
+ *
+ * @since 1.0.2
+ */
 define('FAST_FIELDS_META_TABLE', 'fastfieldsmeta');
 
 /**
@@ -12,20 +23,20 @@ define('FAST_FIELDS_META_TABLE', 'fastfieldsmeta');
  * @since 0.1
  */
 global $debugger;
-//$debugger = new debugger(get_option('ff_debugging'));
-$debugger = new debugger(true);
 
-$debugger->set_alert_format('<div id="message" class="updated"><p>',
-                            '</p></div>');
-$debugger->set_error_format('<div id="message" class="error"><p>',
-                            '</p></div>');
+$debugger = new debugger(get_option('ff_debugging'));
+
+$debugger->set_alert_format('<div id="message" class="updated">', '</div>');
+$debugger->set_error_format('<div id="message" class="error">', '</div>');
 
 /**
  * Wordpress Custom Field Object
  *
- * Original code from {@link http://ezanmoto.wordpress.com Seán M.
- * Kelleher (ezanmoto@gmail.com)}
+ * Original code from
+ * {@link http://ezanmoto.wordpress.com Seán M. Kelleher(ezanmoto@gmail.com)}
  *
+ * @author Seán M. Kelleher
+ * @version 1.0.2
  * @package eZanmoto
  * @subpackage Fields
  * @since 0.1
@@ -178,21 +189,21 @@ class fast_fields{
      *
      * Hooked to the {@code admin_head} action.
      *
+	 * @uses fast_fields::prefix
+	 * @uses fast_functions::output_css_links()
+	 * @uses fast_functions::output_js_links()
      * @since 0.1
      * @access private
      */
     function admin_html_header() {
-        $url = get_bloginfo('wpurl');
+		global $fast_functions;
 
-        echo '<link type="text/css" href="' . $url .
-             '/wp-content/plugins/fast_cart/css/' . $this->prefix .
-             'admin.css" rel="stylesheet" />';
-        echo '<script type="text/javascript" src="' . $url .
-             '/wp-content/plugins/fast_cart/js/jquery-1.4.3.min.js">
-             </script>';
-        echo '<script type="text/javascript" src="' . $url .
-             '/wp-content/plugins/fast_cart/js/fast_fields.js">
-             </script>';
+		$admin_css = $this->prefix . 'admin';
+
+		$css_files = array( $admin_css );
+		$js_files  = array( 'jquery-1.4.3.min', 'fast_fields' );
+		$fast_functions->output_css_links( $css_files );
+		$fast_functions->output_js_links(  $js_files  );
     }
 
     /**
@@ -200,13 +211,16 @@ class fast_fields{
      *
      * Hooked to the {@code wp_head} action.
      *
+	 * @uses fast_fields::prefix
+	 * @uses fast_functions::output_css_links()
      * @since 0.6
      * @access private
      */
     function html_header() {
-        echo '<link type="text/css" href="' . $url .
-             '/wp-content/plugins/fast_cart/css/' . $this->prefix .
-             '.css" rel="stylesheet" />';
+		global $fast_functions;
+		$fast_fields_css = $this->prefix;
+		$css_files       = array( $fast_fields_css );
+		$fast_functions->output_css_links( $css_files );
     }
 
     /**
@@ -350,12 +364,36 @@ class fast_fields{
      * @uses wpdb::get_row()
      * @since 0.1
      * @access public
+     * @deprecated deprecated since version 1.0.2
      *
      * @param int $field_id The field_id of the field to retrieve.
      * @return array An associative array containing the field
      *  attributes.
      */
     function get_field($field_id) {
+        global $wpdb;
+
+        $sql_retrieve = "SELECT *
+                        FROM {$this->table}
+                        WHERE field_id = '{$field_id}'";
+        // Add error handling
+        $field = $wpdb->get_row ($sql_retrieve, ARRAY_A);
+        return $field;
+    }
+
+    /**
+     * Returns the attributes of a given field.
+     *
+     * @uses fast_fields::$table
+     * @uses wpdb::get_row()
+     * @since 1.0.2
+     * @access public
+     *
+     * @param int $field_id The field_id of the field to retrieve.
+     * @return array An associative array containing the field
+     *  attributes.
+     */
+    function get_field_attributes($field_id) {
         global $wpdb;
 
         $sql_retrieve = "SELECT *
@@ -379,7 +417,7 @@ class fast_fields{
      *  attributes.
      */
     function safe_get_field($field_id) {
-        $field = $this->get_field($field_id);
+        $field = $this->get_field_attributes($field_id);
         foreach ($field as $key => $value) {
             $field[$key] = htmlspecialchars($value);
         }
@@ -415,8 +453,7 @@ class fast_fields{
      * @since 0.4
      * @access public
      *
-     * @param int $field_id The field_id of the field to get the value
-     *  of.
+     * @param int $field_id The field_id of the field to get the value of.
      * @return string The value of the field.
      */
     function get_field_id($field_name, $post_id=NULL) {
@@ -441,8 +478,7 @@ class fast_fields{
      * @since 0.3
      * @access public
      *
-     * @param int $field_id The field_id of the field to get the value
-     *  of.
+     * @param int $field_id The field_id of the field to get the value of.
      * @return string The value of the field.
      */
     function get_field_value($field_id) {
@@ -470,8 +506,7 @@ class fast_fields{
      * @param string $value This post's value for this field.
      */
     function edit_post_field($post_id, $field_id, $value) {
-        update_post_meta($post_id, $this->prefix . $field_id,
-                         $value);
+        update_post_meta($post_id, $this->prefix . $field_id, $value);
     }
 
     /**
@@ -487,8 +522,7 @@ class fast_fields{
      * @return string The value of the field for this post.
      */
     function get_post_field($post_id, $field_id) {
-        $value = get_post_meta($post_id, $this->prefix . $field_id,
-                               true);
+        $value = get_post_meta($post_id, $this->prefix . $field_id, true);
         return $value;
     }
 
@@ -585,8 +619,7 @@ class fast_fields{
      * @param int|NULL $post_id If not NULL, the post_id of the post
      *  whose local value for this field is to be changed.
      */
-    function update_field($field_id, $attribute,
-                          $new_value, $post_id=NULL) {
+    function update_field($field_id, $attribute, $new_value, $post_id=NULL) {
 
         $field = $this->get_field($field_id);
         $field_value = $field[$attribute];
@@ -667,6 +700,8 @@ class fast_fields{
 
     /**
      * Outputs an "Add Field" panel.
+     *
+     * <p>The "Add Field" panel is used on admin pages and edit post pages.</p>
      * 
      * @uses fast_fields::$prefix
      * @since 0.1
@@ -711,6 +746,8 @@ class fast_fields{
 
     /**
      * Retrieves all fields of a given type.
+     *
+     * <p>The field types are key, global and post.</p>
      *
      * @uses debugger::fatal()
      * @uses fast_fields::$table
@@ -863,6 +900,8 @@ class fast_fields{
     /**
      * Outputs all fields of a specified type.
      *
+     * <p>The field types are key, global and post.</p>
+     *
      * @uses fast_fields::get_fields()
      * @uses fast_fields::parse_field()
      * @since 0.3
@@ -890,6 +929,8 @@ class fast_fields{
 
     /**
      * Outputs a table containing all fields of a specified type.
+     *
+     * <p>The field types are key, global and post.</p>
      *
      * @uses fast_fields::get_fields()
      * @uses fast_fields::parse_field()
@@ -1220,6 +1261,21 @@ class fast_fields{
         return $pass_2;
     }
 
+    /**
+     * Gets the field_id of all fields of a specific type.
+     *
+     * <p>The field types are key, global and post.</p>
+     *
+     * @uses fast_fields::table
+     * @uses debugger::fatal()
+     * @uses wpdb::get_col()
+     * @since 1.0.2
+     * @access public
+     *
+     * @param 'key'|'global'|'post' $type the type of field to get the id of.
+     * @param int $post_id the post_id of the field if the type is 'post'.
+     * @return array the values of the fields.
+     */
     function get_field_ids($type, $post_id=NULL) {
         global $wpdb;
 
@@ -1251,6 +1307,21 @@ class fast_fields{
         return $field_ids;
     }
 
+    /**
+     * Returns the name of all fields of a specific type.
+     *
+     * <p>The field types are key, global and post.</p>
+     *
+     * @uses fast_fields::table
+     * @uses debugger::fatal()
+     * @uses wpdb::get_col()
+     * @since 1.0.2
+     * @access public
+     *
+     * @param 'key'|'global'|'post' $type the type of field to get the id of.
+     * @param int $post_id the post_id of the field if the type is 'post'.
+     * @return string the names of the fields.
+     */
     function get_field_names($type, $post_id=NULL) {
         global $wpdb;
 
@@ -1272,7 +1343,6 @@ class fast_fields{
                                  'global' or 'post'. Got '{$type}'.");
                 break;
         }
-
 
         $sql_retrieve = "SELECT name
                         FROM {$this->table}

@@ -102,9 +102,7 @@
     if ($debugging) {
 ?>
 <a href="<?php echo $hidden_fields['return']; ?>">Emulate Success</a>
-<a href="<?php echo $hidden_fields['cancel_return']; ?>">
-    Emulate Failure
-</a>
+<a href="<?php echo $hidden_fields['cancel_return']; ?>">Emulate Failure</a>
 <?php
     }
 

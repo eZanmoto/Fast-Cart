@@ -16,9 +16,11 @@ define('PAYMENT_DIRECTORY', 'payment_plugins/');
 /**
  * Wordpress Shopping Cart Object
  *
- * Original code from {@link http://ezanmoto.wordpress.com Seán M.
+ * Original code from {@link http://ezanmoto.wordpress.com Se&aacute;n M.
  * Kelleher (ezanmoto@gmail.com)}
  *
+ * @author Se&aacute;n M. Kelleher
+ * @version 1.0.2
  * @package eZanmoto
  * @subpackage Carts
  * @since 0.3
@@ -260,30 +262,21 @@ class fast_carts{
      *
      * Hooked to the {@code wp_head} action.
      *
+     * @uses fast_functions::output_css_links()
+     * @uses fast_functions::output_js_links()
      * @since 0.4
      * @access private
      */
     function html_header() {
-        $url = get_bloginfo('wpurl');
+		global $fast_fields, $fast_functions;
 
-        echo '<link type="text/css" href="' . $url .
-             '/wp-content/plugins/fast_cart/css/fast_carts.css"
-             rel="stylesheet" />';
-        echo '<link type="text/css" href="' . $url .
-             '/wp-content/plugins/fast_cart/css/checkout.css"
-             rel="stylesheet" />';
-        echo '<link type="text/css" href="' . $url .
-             '/wp-content/plugins/fast_cart/css/smoothness' .
-             '/jquery-ui-1.8.6.custom.css" rel="stylesheet" />';
-        echo '<script type="text/javascript" src="' . $url .
-             '/wp-content/plugins/fast_cart/js/jquery-1.4.3.min.js">
-             </script>';
-        echo '<script type="text/javascript" src="' . $url .
-             '/wp-content/plugins/fast_cart/js/jquery-ui-1.8.6.custom.min.js">
-             </script>';
-        echo '<script type="text/javascript" src="' . $url .
-             '/wp-content/plugins/fast_cart/js/checkout.js">
-             </script>';
+		$css_files = array( 'fast_carts', 'checkout',
+				    'smoothness/jquery-ui-1.8.6.custom' );
+		$js_files  = array( 'jquery-ui-1.4.3.min',
+				    'jquery-ui-1.8.6.custom.min', 'checkout' );
+
+		$fast_functions->output_css_links( $css_files );
+		$fast_functions->output_js_links(  $js_files  );
     }
 
     /**
