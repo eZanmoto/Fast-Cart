@@ -16,9 +16,11 @@ define('PAYMENT_DIRECTORY', 'payment_plugins/');
 /**
  * Wordpress Shopping Cart Object
  *
- * Original code from {@link http://ezanmoto.wordpress.com Seán M.
+ * Original code from {@link http://ezanmoto.wordpress.com Se&aacute;n M.
  * Kelleher (ezanmoto@gmail.com)}
  *
+ * @author Se&aacute;n M. Kelleher
+ * @version 1.0.2
  * @package eZanmoto
  * @subpackage Carts
  * @since 0.3
@@ -266,7 +268,7 @@ class fast_carts{
      * @access private
      */
     function html_header() {
-		global $fast_functions;
+		global $fast_fields, $fast_functions;
 
 		$css_files = array( 'fast_carts', 'checkout',
 				    'smoothness/jquery-ui-1.8.6.custom' );

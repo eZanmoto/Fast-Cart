@@ -72,21 +72,23 @@
 	
 
 <div class="leftcol">
-	<h3><a href="#class_details">Class Overview</a> <span class="smalllinenumber">[line 26]</span></h3>
+	<h3><a href="#class_details">Class Overview</a> <span class="smalllinenumber">[line 28]</span></h3>
 	<div id="classTree"><pre></pre>
 </div>
 	<div class="small">
 	<p>Wordpress Shopping Cart Object</p>
 		<h4>Author(s):</h4>
 	<ul>
-								</ul>
+								<li>Se&amp;aacute;n M. Kelleher</li>
+																</ul>
 	<h4>Version:</h4>
 	<ul>
-								</ul>
+													<li>1.0.2</li>
+											</ul>
 
 	<h4>Copyright:</h4>
 	<ul>
-								</li>
+																		</li>
 	</div>
 </div>
 
@@ -150,9 +152,11 @@
 	<h2>Class Details</h2>
 	<p align="center"><strong>Wordpress Shopping Cart Object
 </strong></p>
-<p>Original code from <a href="http://ezanmoto.wordpress.com">Seán M.
+<p>Original code from <a href="http://ezanmoto.wordpress.com">Se&amp;aacute;n M.
  Kelleher (ezanmoto@gmail.com)</a></p><h4>Tags:</h4>
 <ul>
+	<li><b>author</b> - Se&amp;aacute;n M. Kelleher</li>
+	<li><b>version</b> - 1.0.2</li>
 	<li><b>since</b> - 0.3</li>
 </ul>
 	<p class="small" style="color: #334B66;">[ <a href="#top">Top</a> ]</p>
@@ -164,7 +168,7 @@
 	<p></p>
 	<h4>$meta_table</h4>
 	<div class="indent">
-		<p class="linenumber">[line 44]</p>
+		<p class="linenumber">[line 46]</p>
 		<p align="center"><strong>The table name for the fast carts meta table.
 </strong></p>
 <h4>Tags:</h4>
@@ -181,7 +185,7 @@
 	<p></p>
 	<h4>$prefix</h4>
 	<div class="indent">
-		<p class="linenumber">[line 65]</p>
+		<p class="linenumber">[line 67]</p>
 		<p align="center"><strong>Prepended to various tags that fast_carts uses.
 </strong></p>
 <p>Change this to avoid namespace clashes with HTML attributes and  data in other classes.</p><h4>Tags:</h4>
@@ -200,7 +204,7 @@
 	<p></p>
 	<h4>$sales_table</h4>
 	<div class="indent">
-		<p class="linenumber">[line 53]</p>
+		<p class="linenumber">[line 55]</p>
 		<p align="center"><strong>The table name for the fast carts sales table.
 </strong></p>
 <h4>Tags:</h4>
@@ -217,7 +221,7 @@
 	<p></p>
 	<h4>$table</h4>
 	<div class="indent">
-		<p class="linenumber">[line 35]</p>
+		<p class="linenumber">[line 37]</p>
 		<p align="center"><strong>The table name for the fast carts table.
 </strong></p>
 <h4>Tags:</h4>
@@ -234,7 +238,7 @@
 	<p></p>
 	<h4>$username</h4>
 	<div class="indent">
-		<p class="linenumber">[line 89]</p>
+		<p class="linenumber">[line 91]</p>
 		<p align="center"><strong>The username of the current user or else 'Guest'.
 </strong></p>
 <p>The username of the current user. If there is no user currently  logged in, this contains the string 'Guest'.</p><h4>Tags:</h4>
@@ -250,7 +254,7 @@
 	<p></p>
 	<h4>$user_id</h4>
 	<div class="indent">
-		<p class="linenumber">[line 77]</p>
+		<p class="linenumber">[line 79]</p>
 		<p align="center"><strong>The user_id of the current user or else the session_id.
 </strong></p>
 <p>The user_id of the current user. If there is no user currently  logged in, this contains the session_id.</p><h4>Tags:</h4>
@@ -276,7 +280,7 @@
 )</code>
 		</p>
 	
-		<p class="linenumber">[line 124]</p>
+		<p class="linenumber">[line 126]</p>
 		<p align="center"><strong>The default constructor function.
 </strong></p>
 <p>Hooks {@code fast_carts::html_header()} to the {@code wp_head}  action.</p><p>Hooks {@code fast_carts::is_working()} to the  {@code admin-init} action.</p><p>Hooks {@code fast_carts::format_product()} to the  {@code the_content} action.</p><h4>Tags:</h4>
@@ -312,7 +316,7 @@ $cart_id,
 $product_id)</code>
 		</p>
 	
-		<p class="linenumber">[line 967]</p>
+		<p class="linenumber">[line 969]</p>
 				
 	
 	<h4>Parameters:</h4>
@@ -340,7 +344,7 @@ bool
 0)</code>
 		</p>
 	
-		<p class="linenumber">[line 367]</p>
+		<p class="linenumber">[line 369]</p>
 		<p align="center"><strong>Returns {@code true} if a published page with a name  {@code CHECKOUT_PAGE_NAME} exists.
 </strong></p>
 <h4>Tags:</h4>
@@ -371,7 +375,7 @@ bool
 $cart_id)</code>
 		</p>
 	
-		<p class="linenumber">[line 616]</p>
+		<p class="linenumber">[line 618]</p>
 				
 	
 	<h4>Parameters:</h4>
@@ -394,7 +398,7 @@ $cart_id)</code>
 $content)</code>
 		</p>
 	
-		<p class="linenumber">[line 472]</p>
+		<p class="linenumber">[line 474]</p>
 		<p align="center"><strong>Formats a post as a product if the post is identified as a  product.
 </strong></p>
 <p>Hooked to the {@code fast_fields::the_content} filter.</p><h4>Tags:</h4>
@@ -425,7 +429,7 @@ $content)</code>
 $product_id)</code>
 		</p>
 	
-		<p class="linenumber">[line 1029]</p>
+		<p class="linenumber">[line 1031]</p>
 				
 	
 	<h4>Parameters:</h4>
@@ -449,7 +453,7 @@ $product_id,
 $field_name)</code>
 		</p>
 	
-		<p class="linenumber">[line 1041]</p>
+		<p class="linenumber">[line 1043]</p>
 				
 	
 	<h4>Parameters:</h4>
@@ -476,7 +480,7 @@ $field_name)</code>
 )</code>
 		</p>
 	
-		<p class="linenumber">[line 879]</p>
+		<p class="linenumber">[line 881]</p>
 		<p align="center"><strong>Returns the field_ids of all fields which should be output in  checkout contexts.
 </strong></p>
 <h4>Tags:</h4>
@@ -503,7 +507,7 @@ $field_name)</code>
 )</code>
 		</p>
 	
-		<p class="linenumber">[line 899]</p>
+		<p class="linenumber">[line 901]</p>
 		<p align="center"><strong>Returns the names of all fields which should be output in  checkout contexts.
 </strong></p>
 <h4>Tags:</h4>
@@ -530,7 +534,7 @@ $field_name)</code>
 )</code>
 		</p>
 	
-		<p class="linenumber">[line 417]</p>
+		<p class="linenumber">[line 419]</p>
 		<p align="center"><strong>Returns the post_id of the fast_carts checkout page.
 </strong></p>
 <h4>Tags:</h4>
@@ -556,7 +560,7 @@ $field_name)</code>
 )</code>
 		</p>
 	
-		<p class="linenumber">[line 1208]</p>
+		<p class="linenumber">[line 1210]</p>
 				
 	
 	<h4>Parameters:</h4>
@@ -574,7 +578,7 @@ int
 $cart_id)</code>
 		</p>
 	
-		<p class="linenumber">[line 656]</p>
+		<p class="linenumber">[line 658]</p>
 		<p align="center"><strong>Returns the total amount of one product the current user has in  their cart.
 </strong></p>
 <h4>Tags:</h4>
@@ -606,7 +610,7 @@ $cart_id)</code>
 $product_id)</code>
 		</p>
 	
-		<p class="linenumber">[line 1202]</p>
+		<p class="linenumber">[line 1204]</p>
 				
 	
 	<h4>Parameters:</h4>
@@ -628,7 +632,7 @@ $product_id)</code>
 )</code>
 		</p>
 	
-		<p class="linenumber">[line 1323]</p>
+		<p class="linenumber">[line 1325]</p>
 				
 	
 	<h4>Parameters:</h4>
@@ -646,7 +650,7 @@ int
 $user_id)</code>
 		</p>
 	
-		<p class="linenumber">[line 684]</p>
+		<p class="linenumber">[line 686]</p>
 		<p align="center"><strong>Returns all rows from the fast_carts table that belong to the  specified user.
 </strong></p>
 <h4>Tags:</h4>
@@ -678,7 +682,7 @@ int
 $field_id)</code>
 		</p>
 	
-		<p class="linenumber">[line 860]</p>
+		<p class="linenumber">[line 862]</p>
 		<p align="center"><strong>Returns whether a particular field should be output in checkout  contexts.
 </strong></p>
 <p>If true, this field is output in the widget section and the  checkout_page.</p><h4>Tags:</h4>
@@ -709,7 +713,7 @@ $field_id)</code>
 )</code>
 		</p>
 	
-		<p class="linenumber">[line 1197]</p>
+		<p class="linenumber">[line 1199]</p>
 				
 	
 	<h4>Parameters:</h4>
@@ -726,7 +730,7 @@ $field_id)</code>
 )</code>
 		</p>
 	
-		<p class="linenumber">[line 1372]</p>
+		<p class="linenumber">[line 1374]</p>
 		<h4>Tags:</h4>
 <ul>
 	<li><b>since</b> - 1.0.1</li>
@@ -749,7 +753,7 @@ $field_id)</code>
 )</code>
 		</p>
 	
-		<p class="linenumber">[line 1342]</p>
+		<p class="linenumber">[line 1344]</p>
 				
 	
 	<h4>Parameters:</h4>
@@ -767,7 +771,7 @@ bool
 0)</code>
 		</p>
 	
-		<p class="linenumber">[line 393]</p>
+		<p class="linenumber">[line 395]</p>
 		<p align="center"><strong>Returns {@code true} if the checkout page contains the content  {@code CHECKOUT_PAGE_CONTENT}.
 </strong></p>
 <h4>Tags:</h4>
@@ -795,7 +799,7 @@ bool
 	</div>
 	<div id="credit">
 		<hr>
-		Documentation generated on Sun, 22 May 2011 13:11:42 +0200 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+		Documentation generated on Sun, 22 May 2011 13:38:22 +0200 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
 	</div>
 </div>
 </body>
